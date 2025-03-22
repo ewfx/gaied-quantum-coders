@@ -172,3 +172,14 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+code/src/python-ai/__pycache__/
+code/src/python-ai/.ipynb_checkpoints/
+code/src/python-ai/.vscode/
+code/src/python-ai/.mypy_cache/
+code/src/python-ai/.pytest_cache/
+code/src/python-ai/.ropeproject/
+code/src/python-ai/venv/
+code/src/python-ai/.env/
+code/src/python-ai/.venv/
+code/src/python-ai/.mypy_cache/
