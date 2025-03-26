@@ -1,0 +1,36 @@
+{
+    "duplicateCheck": false,
+    "Results": [
+        {
+            "Summary": "For ABC Bank, NA Reference GLOBAL INDUSTRIAL CORP USD 250MM 09152024, Interest Rate Adjustment If you have any questions, please call the undersigned. SENTHAMARAI SELVI FAX 123456786 Re GLOBAL INDUSTRIAL CORP USD 250MM 09152024, TERM LOAN B Description Interest Rate Adjustment Request BORROWER GLOBAL INDUSTRIAL CORP DEAL NAME GLOBAL INDUSTRIAL CORP USD 250MM 09152024",
+            "Classification": [
+                {
+                    "Category": "Account Maintenance",
+                    "Subcategory": "Interest Rate Adjustment",
+                    "confidence_score": 100.0
+                },
+                {
+                    "Category": "Loan Modifications",
+                    "Subcategory": "Interest Rate Modifications",
+                    "confidence_score": 100.0
+                }
+            ],
+            "Extracted_Details": {
+                "Dates": [
+                    "2024-09-15"
+                ],
+                "Organizations": [
+                    "ABC Bank",
+                    "XYZ Bank NA  \n",
+                    "XYZ Bank N.A.  \nLoan Agency Services",
+                    "Borrower",
+                    "ABC BANK",
+                    "NATIONAL ASSOCIATION  \nATTN:",
+                    "NA  \n\nReference: GLOBAL INDUSTRIAL CORP USD",
+                    "Interest Rate Adjustment  \n\n",
+                    "XYZ Bank N.A.\n"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "duplicateCheck": false,
+    "Results": [
+        {
+            "Summary": "PLEASE FUND YOUR SHARE OF 24,714.36 Bank Name XYZ Bank NA ABA 023456781 Account 0024487012 Account Name LIQ CLO Operating Account Ref ASDF MIDATLANTIC LLC Regards, ROBERTS SCOTT Telephone Fax XYZ Commercial Banking is a brand name of XYX Bank, N.A. Member FDIC March 01, 2025 093915 AM MIDATLANTIC LLC DEAL NAME ASDF MIDATLANTIC LLC 171.3MM 1142022 Effective 01MAR2025, the Lender Shares of facility TERM LOAN A2 have been adjusted.",
+            "Classification": [
+                {
+                    "Category": "Adjustments",
+                    "Subcategory": "Loan Adjustment",
+                    "confidence_score": 100.0
+                },
+                {
+                    "Category": "Commitment Changes",
+                    "Subcategory": "Decrease Commitment",
+                    "confidence_score": 100.0
+                }
+            ],
+            "Extracted_Details": {
+                "Dates": [
+                    "2025-03-01",
+                    "2022-11-04"
+                ],
+                "Amounts": [
+                    "714.36",
+                    "963.55",
+                    "$24,714.36",
+                    "249.19",
+                    "$171"
+                ],
+                "Names": [
+                    "FDIC"
+                ],
+                "Organizations": [
+                    "XYZ Bank N.A.\n\t\t\tLoan Agency Services\nDate",
+                    "N.A.",
+                    "ABC Bank",
+                    "the Lender Shares",
+                    "NA",
+                    "CLO",
+                    "NATIONAL ASSOCIATION\nATTN:",
+                    "XYX Bank",
+                    "Bank Name",
+                    "XYZ Bank NA\nABA",
+                    "XYZ Bank N.A.\n"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "duplicateCheck": true,
+    "Results": [
+        {
+            "Summary": "For ABC BANK NATIONAL ASSOCIATION TO ABC BANK, NA ABA Number 451000876 Account No XXXXXXXXX890 Reference RANTOR FITZGERALD LP USD 425MM MAR22 , SOFR US Term Principal Payment RANTOR FIT00044 Thanks Regards, KUDORA CRESNETTE Telephone 19398561200 Email id kudora.cresnettebofa.com Please note that i if the Borrower has not in fact made such payment or ii any payment you receive is in excess of what was paid by the Borrower or iii we notify you that the payment was erroneously made, then pursuant to the provisions of the credit facility, you agree to return such payment.",
+            "Classification": [
+                {
+                    "Category": "Money Movement - Inbound",
+                    "Subcategory": "Principal",
+                    "confidence_score": 100.0
+                },
+                {
+                    "Category": "Loan Modifications",
+                    "Subcategory": "Principal Reductions",
+                    "confidence_score": 92.0
+                }
+            ],
+            "Extracted_Details": {
+                "Amounts": [
+                    "000.00",
+                    "764.71",
+                    "470.59",
+                    "705.88"
+                ],
+                "Names": [
+                    "Borrower"
+                ],
+                "Organizations": [
+                    "USD",
+                    "ABC BANK NATIONAL ASSOCIATION\n\nDate",
+                    "ATTN",
+                    "NA",
+                    "Borrower",
+                    "ABC BANK",
+                    "New Lender Share Principal Balance",
+                    "XYZ Bank N.A.\nBANK OF AMERICA\n\nBank of America N.A",
+                    "Previous Lender Share Principal Balance",
+                    "ABC BANK NATIONAL ASSOCIATION",
+                    "FTIUY@abcbank.com"
+                ]
+            }
+        }
+    ]
+}

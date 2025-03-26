@@ -1,0 +1,135 @@
+{
+    "duplicateCheck": true,
+    "Results": [
+        {
+            "Summary": "SENTHAMARAI SELVI FAX 123456786 Re HIGHLAND GLOBAL LLC USD 300MM 01152025, TERM LOAN B Description Closing Notice Upon Reallocation of Principal and Fee BORROWER For ABC Bank, NA Reference HIGHLAND GLOBAL LLC USD 300MM 01152025, Principal Reallocation Closing Notice Please process the following for fund remittance Bank Name XYZ Bank NA ABA 987654321 Account 0087654321 Account Name HIGHLAND GLOBAL ESCROW ACCOUNT Ref HIGHLAND GLOBAL",
+            "Classification": [
+                {
+                    "Category": "Closing Requests",
+                    "Subcategory": "Reallocation Principal",
+                    "confidence_score": 100.0
+                },
+                {
+                    "Category": "Money Movement - Inbound",
+                    "Subcategory": "Principal",
+                    "confidence_score": 85.0
+                }
+            ],
+            "Extracted_Details": {
+                "Dates": [
+                    "2025-01-15"
+                ],
+                "Amounts": [
+                    "000.00"
+                ],
+                "Organizations": [
+                    "ABC Bank",
+                    "XYZ Bank NA  \n",
+                    "XYZ Bank N.A.  \nLoan Agency Services",
+                    "Borrower",
+                    "ABC BANK",
+                    "NATIONAL ASSOCIATION  \nATTN:",
+                    "NA  \n\nReference",
+                    "TERM LOAN B  \n\nDescription: Closing Notice Upon Reallocation of Principal and Fee  \n\n",
+                    "XYZ Bank N.A.\n",
+                    "Principal Reallocation & Closing Notice  \n\nPlease"
+                ]
+            }
+        },
+        {
+            "Summary": "STARLIGHT VENTURES USD 450MM 01012025 Effective 25MAR2025, the Borrower has successfully restructured the loan agreement under the following terms Previous Tenure 5 years New Tenure 7 years Revised Principal Balance USD 275,000,000 For ABC Bank, NA Reference STARLIGHT VENTURES USD 450MM 01012025, Loan Restructuring If you have any questions, please call the undersigned. SENTHAMARAI SELVI FAX 123456786 Re STARLIGHT VENTURES USD 450MM 01012025, REVOLVING CREDIT FACILITY Description Loan Restructuring Notification BORROWER",
+            "Classification": [
+                {
+                    "Category": "Account Maintenance",
+                    "Subcategory": "Loan Restructuring",
+                    "confidence_score": 100.0
+                },
+                {
+                    "Category": "Adjustments",
+                    "Subcategory": "Loan Adjustment",
+                    "confidence_score": 59.0
+                }
+            ],
+            "Extracted_Details": {
+                "Dates": [
+                    "2025-01-01"
+                ],
+                "Names": [
+                    "Loan Restructuring"
+                ],
+                "Organizations": [
+                    "ABC Bank",
+                    "XYZ Bank NA  \n",
+                    "XYZ Bank N.A.  \nLoan Agency Services",
+                    "Borrower",
+                    "ABC BANK",
+                    "NATIONAL ASSOCIATION  \nATTN:",
+                    "NA  \n\nReference: STARLIGHT VENTURES",
+                    "XYZ Bank N.A.\n"
+                ]
+            }
+        },
+        {
+            "Summary": "For our next payment, wed like to remit 30,000, covering principal, interest, and a service fee. Id like to share some updates and requests regarding money movement and repricing for our loan account.",
+            "Classification": [
+                {
+                    "Category": "Financial Reporting",
+                    "Subcategory": "Budgeting and Forecasting",
+                    "confidence_score": 100.0
+                },
+                {
+                    "Category": "Money Movement - Inbound",
+                    "Subcategory": "Principal + Interest",
+                    "confidence_score": 82.0
+                }
+            ],
+            "Extracted_Details": {
+                "Amounts": [
+                    "$25,000",
+                    "$20,000",
+                    "$5,000",
+                    "$30,000"
+                ],
+                "Names": [
+                    "Francis"
+                ],
+                "Organizations": [
+                    "NA",
+                    "XYZ BANK",
+                    "XYZ Bank N.A.\nBank XYZ"
+                ]
+            }
+        },
+        {
+            "Summary": "For our next payment, wed like to remit 30,000, covering principal, interest, and a service fee. Id like to share some updates and requests regarding money movement and repricing for our loan account.",
+            "Classification": [
+                {
+                    "Category": "Financial Reporting",
+                    "Subcategory": "Budgeting and Forecasting",
+                    "confidence_score": 100.0
+                },
+                {
+                    "Category": "Money Movement - Inbound",
+                    "Subcategory": "Principal + Interest",
+                    "confidence_score": 82.0
+                }
+            ],
+            "Extracted_Details": {
+                "Amounts": [
+                    "$25,000",
+                    "$20,000",
+                    "$5,000",
+                    "$30,000"
+                ],
+                "Names": [
+                    "Francis"
+                ],
+                "Organizations": [
+                    "NA",
+                    "XYZ BANK",
+                    "XYZ Bank N.A.\nBank XYZ"
+                ]
+            }
+        }
+    ]
+}
