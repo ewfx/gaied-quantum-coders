@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.4.4'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.wellsfargo.ccibt.gplt.ftu'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation(platform("com.google.cloud:libraries-bom:26.57.0"))
+    implementation 'com.google.cloud:google-cloud-aiplatform:3.61.0'
+    implementation 'com.google.cloud:google-cloud-vertexai:1.20.0'
+    implementation 'com.google.cloud:google-cloud-language:2.61.0'
+    implementation 'com.google.api-client:google-api-client:2.7.2'
+    implementation 'org.springframework.kafka:spring-kafka'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+    annotationProcessor 'org.projectlombok:lombok:1.18.36'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+springBoot {
+    mainClass = 'com.wellsfargo.ccibt.gplt.ftu.ApplicationRunnerClass'
+}
+
+
