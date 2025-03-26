@@ -38,22 +38,39 @@ Describe the major technical or non-technical challenges your team encountered.
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone [https://github.com/your-repo.git](https://github.com/ewfx/gaied-quantum-coders/)]
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   navigate to code/src folder and find the modules below there
+      1. duplicateDetection
+      2. emailClassifier
+      3. emailExtraction
+      4. emailIngress
+   Got to each folder and run the each command for installing the dependencies
+      1. python -m venv ven
+      2. source venv/bin/activate
+      3. pip install -r requirement.txt
+      4. For only emailClassifier folder run the command "python -m spacy download en_core_web_sm"
    ```
 3. Run the project  
    ```sh
-   npm start  # or python app.py
+   navigate to code/src folder and find the modules below there
+      1. duplicateDetection
+            uvicorn similarityDetection:app --port=8002 --reload
+      2. emailClassifier
+            uvicorn emailMLClassifier:app --port=8001 --reload
+      3. emailExtraction
+            uvicorn emailTranslation:app --port=8000 --reload
+      4. emailIngress
+            python email_scheduler.py
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: 
+- 🔹 Backend: Python / FastAPI / Django
+- 🔹 Database: 
+- 🔹 Other: OpenAI API 
 
 ## 👥 Team
 - **Your Name** - [GitHub](#) | [LinkedIn](#)
