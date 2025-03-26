@@ -139,15 +139,14 @@ def job():
         logging.error("Error: EMAIL_INPUT_FOLDER environment variable is not set.")
         return
     logging.info(f"Starting email extraction for folder: {INPUT_EML}")
-    email_generation_frominput(INPUT_EML)
-    # extract_email(INPUT_EML)
+    # email_generation_frominput(INPUT_EML)
+    extract_email(INPUT_EML)
     logging.info("Email extraction completed.")
 
     for filename in os.listdir(INPUT_EML):
         if filename.endswith(".eml"):
             #setp2 emial extraction(convert eml to json format) API Call
             eml_path = os.path.join(INPUT_EML, filename)
-            data = {}
             files = {"file": (filename, open(eml_path, "rb"), "message/rfc822")}
             requests.post(api_URL+":"+os.getenv("EXTRACTION_API_PORT")+"/emailToJson", files=files,)
 
@@ -163,9 +162,9 @@ def job():
     
             #step5 generate output in output folder API Call
             output_json= classiferResponse.json()
-            logging.info(f"duplicateIndicator:{duplicateCheckResponse.json().get("duplicateIndicator")}")
+            # logging.info(f"duplicateIndicator:{duplicateCheckResponse.json().get("duplicateIndicator")}")
             output_json["duplicateCheck"] = duplicateCheckResponse.json().get("duplicateIndicator")
-            logging.info(f"duplicateCheck:{output_json["duplicateCheck"]}")
+            # logging.info(f"duplicateCheck:{output_json["duplicateCheck"]}")
 
             print(output_json["duplicateCheck"])
             json_output_filename = filename.replace(".eml", "_output.json")
@@ -177,13 +176,27 @@ def job():
 
             #step6 get vertex AI ouput API Call and stored in output
             #waiting for vivek
+            inputVertexAI = "****emailbody***"
+            inputVertexAI = inputVertexAI + data["body"]
+            for attachment in data["attachments"]:
+                inputVertexAI = inputVertexAI + "****attachment***"
+                inputVertexAI = inputVertexAI + attachment["content"]
+            # print(inputVertexAI)
+            vertexAIResponse = requests.post("http://35.232.107.217:8090/api/v1/emails/classifyIncomingEmail", data=inputVertexAI,headers={"Content-Type": "text/plain"})
+            vertex_ai_fileName = filename.replace(".eml", "_vertexAI_output.json")
+            vertex_output_path = os.path.join(OUTPUT, vertex_ai_fileName)
+            cleaned_text = vertexAIResponse.text.replace("\\n", "").replace("\\\"", "\"")
+            with open(vertex_output_path, "w", encoding="utf-8") as json_file:
+                json.dump(cleaned_text, json_file, indent=4)
+            print(vertexAIResponse)
+            print(vertexAIResponse.text)
 
             os.remove(eml_path)
             os.remove(json_input_path)
             logging.info(f"File removed:{filename}")
             logging.info(f"File removed:{json_input_path}")
 # Schedule the job every 1 minute
-schedule.every(1).minutes.do(job)
+schedule.every(20).seconds.do(job)
 logging.info("Scheduler started. Running job every 1 minute.")
 
 while True:

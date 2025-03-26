@@ -165,8 +165,14 @@ def generate_summary(text,num_sentences=2):
     sentences = [sent.text for sent in doc.sents]
     
     # Compute TF-IDF scores
-    vectorizer = TfidfVectorizer()
-    X = vectorizer.fit_transform(sentences)
+    try:
+        vectorizer = TfidfVectorizer()
+        X = vectorizer.fit_transform(sentences)
+    except ValueError as e:
+        print("Error:", str(e))
+        print("Retrying with default text...")
+        sentences = ["Not a valid content"]
+        X = vectorizer.fit_transform(sentences)
     
     # Rank sentences based on sum of TF-IDF scores
     sentence_scores = X.sum(axis=1)
