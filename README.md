@@ -2,7 +2,7 @@
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
-- [Demo](#demo)
+- [Demo](https://github.com/ewfx/gaied-quantum-coders/tree/main/artifacts/demo)
 - [Inspiration](#inspiration)
 - [What It Does](#what-it-does)
 - [How We Built It](#how-we-built-it)
@@ -14,14 +14,25 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+
+Solution Approaches
+We propose two approaches to solve the problem:
+Google Vertex AI Large Language Model
+Custom ML based classification.
+
+# Approach 1: Google Vertex AI (LLM-based Solution) 
+Using Google Vertex AI   gemini-1.5-flash-001 model to classify incoming emails with attachments, generate structured output, and perform duplicates detection using the open-source BERT model. To extract content from PDF and images we leverage the PyTesseract  and PyPDF2 framework.
+
+# Approach 2: Custom ML Model Solution
+Develop a Machine Learning-based system trained on historical data to classify service requests, extract key attributes, and detect duplicates.
+The approach differs only for Email Classification stage , where we would be using a Machine Learning model to classify an incoming email instead of google vertex AI.
 
 ## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
+🔗 [Live Demo](https://github.com/ewfx/gaied-quantum-coders/blob/main/artifacts/demo/demo_1ftu_gaied.mp4) (if applicable)  
+📹 [Video Demo](https://github.com/ewfx/gaied-quantum-coders/blob/main/artifacts/demo/demo_1ftu_gaied.mp4) (if applicable)  
 🖼️ Screenshots:
 
-![Screenshot 1](link-to-image)
+![Screenshot 1]([link-to-image](https://github.com/ewfx/gaied-quantum-coders/blob/main/artifacts/demo)
 
 ## 💡 Inspiration
 What inspired you to create this project? Describe the problem you're solving.
