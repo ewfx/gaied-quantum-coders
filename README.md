@@ -63,6 +63,7 @@ Describe the major technical or non-technical challenges your team encountered.
       3. emailExtraction
             uvicorn emailTranslation:app --port=8000 --reload
       4. emailIngress
+            check the .env files and provide your system path to workflow execute
             python email_scheduler.py
    ```
 
