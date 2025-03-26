@@ -244,3 +244,4 @@ poetry.lock
 *.coveragerc
 .history
 token.json
+Untitled.ipynb
