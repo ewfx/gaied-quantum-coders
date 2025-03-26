@@ -67,6 +67,9 @@ Describe the major technical or non-technical challenges your team encountered.
             python email_scheduler.py
    ```
 
+![SWAGGER_UI](https://github.com/ewfx/gaied-quantum-coders/blob/e5122686c4146d2f0d1948fe012ba783d7fc7135/artifacts/demo/Screenshot%202025-03-26%20at%202.10.32%E2%80%AFPM.png)
+![SWAGGER_UI](https://github.com/ewfx/gaied-quantum-coders/blob/e5122686c4146d2f0d1948fe012ba783d7fc7135/artifacts/demo/Screenshot%202025-03-26%20at%202.10.55%E2%80%AFPM.png)
+![SWAGGER_UI](https://github.com/ewfx/gaied-quantum-coders/blob/e5122686c4146d2f0d1948fe012ba783d7fc7135/artifacts/demo/Screenshot%202025-03-26%20at%202.11.05%E2%80%AFPM.png)
 ## 🏗️ Tech Stack
 - 🔹 Frontend: 
 - 🔹 Backend: Python / FastAPI / Django
